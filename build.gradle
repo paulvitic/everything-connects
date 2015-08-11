@@ -1,0 +1,42 @@
+project.ext {
+    osgiSpecVersion = '4.3.1'
+    paxExamVersion = '4.5.0'
+    //paxUrlVersion = '1.6.0'
+    felixOsgiVersion = '4.4.1'
+    knopflerfishOsgiVersion = '6.0.4' //6.0.4,7.0.1
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'osgi'
+    apply plugin: 'maven'
+
+    repositories {
+        mavenCentral()
+        maven {
+            url "http://www.knopflerfish.org/maven2/"
+        }
+    }
+
+    dependencies {
+        testCompile (
+                'org.ops4j.pax.exam:pax-exam-container-native:' + project.paxExamVersion,
+                'org.ops4j.pax.exam:pax-exam-junit4:' + project.paxExamVersion,
+                'org.ops4j.pax.exam:pax-exam-link-mvn:' + project.paxExamVersion,
+                //'org.ops4j.pax.url:pax-url-aether:' + project.paxUrlVersion,
+                //'org.apache.felix:org.apache.felix.framework:' + project.felixOsgiVersion,
+                'org.knopflerfish:framework:' + project.knopflerfishOsgiVersion,
+                'javax.inject:javax.inject:1',
+                'ch.qos.logback:logback-core:1.1.3',
+                'ch.qos.logback:logback-classic:1.1.3'
+        )
+
+        compile (
+                'org.osgi:org.osgi.core:' + project.osgiSpecVersion,
+                'org.osgi:org.osgi.compendium:' + project.osgiSpecVersion
+        )
+    }
+
+    group = 'net.vitic.ec'
+    version = '0.1.1'
+}
