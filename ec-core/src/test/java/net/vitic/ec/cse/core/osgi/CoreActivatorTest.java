@@ -20,9 +20,6 @@ import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.junit.Assert.assertThat;
 import static org.ops4j.pax.exam.CoreOptions.*;
 
-/**
- * Created by paul on 09/08/15.
- */
 @RunWith(PaxExam.class)
 public class CoreActivatorTest extends TestCase {
 
@@ -45,7 +42,7 @@ public class CoreActivatorTest extends TestCase {
     @Test
     public void testUpdated() throws Exception {
         for( Bundle b : bundleContext.getBundles() ) {
-            System.out.println( "Bundle " + b.getBundleId() + " : " + b.getSymbolicName() + ":" + b.getRegisteredServices());
+            System.out.println("Bundle " + b.getBundleId() + " : " + b.getSymbolicName() + ":" + b.getRegisteredServices());
         }
         assertThat(bundleContext, is(notNullValue()));
 
