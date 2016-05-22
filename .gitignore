@@ -125,4 +125,21 @@ local.properties
 # TeXlipse plugin
 .texlipse
 
+### Distributions
+## Equinox
+!dist-ec-equinox/*.jar
+!dist-ec-equinox/plugins/*.jar
+dist-ec-equinox/configuration/*
+!dist-ec-equinox/configuration/config.ini
+
+## Felix
+!dist-ec-felix/bin/*.jar
+!dist-ec-felix/bundle/*.jar
+dist-ec-felix/felix-cache/*
+
+## Knopflerfish
+!dist-ec-knopflerfish/*.jar
+!dist-ec-knopflerfish/jars/**/*.jar
+dist-ec-knopflerfish/fwdir
+
 
