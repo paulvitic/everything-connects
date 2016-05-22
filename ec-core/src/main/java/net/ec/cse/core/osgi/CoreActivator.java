@@ -34,6 +34,8 @@ public class CoreActivator implements ManagedService, BundleActivator {
         logService = logServiceTracker.getService();
         logServiceTracker.close();
 
+        if(logService != null) logService.log(LogService.LOG_INFO, bundleSymbolicName + " starting.");
+
         String pid = bundleSymbolicName + ".config";
         Dictionary<String, String> dictionary = new Hashtable<String, String>();
         dictionary.put(Constants.SERVICE_PID, pid);
@@ -50,7 +52,8 @@ public class CoreActivator implements ManagedService, BundleActivator {
     public void updated(Dictionary<String, ?> properties) throws ConfigurationException {
         if (properties!=null){
             Object somethingProp = properties.get(bundleSymbolicName + ".something");
-            if(somethingProp !=null && logService != null) logService.log(LogService.LOG_INFO, somethingProp.toString());
+            if(somethingProp !=null && logService != null)
+                logService.log(LogService.LOG_INFO, somethingProp.toString());
         }
     }
 }
