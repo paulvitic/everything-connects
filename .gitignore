@@ -135,11 +135,13 @@ dist-ec-equinox/configuration/*
 ## Felix
 !dist-ec-felix/bin/*.jar
 !dist-ec-felix/bundle/**/*.jar
+dist-ec-felix/bundle/ec/*.jar
 dist-ec-felix/felix-cache/*
 
 ## Knopflerfish
 !dist-ec-knopflerfish/*.jar
 !dist-ec-knopflerfish/jars/**/*.jar
+dist-ec-knopflerfish/jars/ec/*.jar
 dist-ec-knopflerfish/fwdir
 
 

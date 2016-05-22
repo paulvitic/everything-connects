@@ -79,7 +79,7 @@
 -Forg.osgi.service.http.port=8080
 
 # Log service properties
--Forg.knopflerfish.log.out=true
+-Forg.knopflerfish.log.out=false
 -Forg.knopflerfish.log.level=info
 -Forg.knopflerfish.log.grabio=true
 -Forg.knopflerfish.log.file=false

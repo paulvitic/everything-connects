@@ -2,9 +2,9 @@
 <!DOCTYPE cm_data PUBLIC '-//Gatespace//DTD cm_data 0.1//EN' 'cm_data.dtd'>
 <cm_data version="0.1">
 <!-- EDITING THIS FILE IS NOT GUARANTEED TO WORK  -->
-<configuration pid="net.ec.core.config" mode="new">
+<configuration pid="net.ec.core" mode="new">
 <property name="service.pid">
-<value type="String">net.ec.core.config</value>
+<value type="String">net.ec.core</value>
 </property>
 <property name="dynamic.service.bundleLocation">
 <value type="Boolean">true</value>

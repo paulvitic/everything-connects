@@ -1,6 +1,5 @@
 jar {
     manifest {
-        instruction 'Bundle-SymbolicName', 'net.ec.cse.core'
         instruction 'Bundle-Activator', 'net.ec.cse.core.osgi.CoreActivator'
     }
 }

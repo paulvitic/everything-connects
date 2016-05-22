@@ -1,6 +1,5 @@
 jar {
     manifest {
-        instruction 'Bundle-SymbolicName', 'net.ec.cse.util'
     }
 }
 

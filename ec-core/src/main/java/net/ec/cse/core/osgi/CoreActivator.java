@@ -36,7 +36,7 @@ public class CoreActivator implements ManagedService, BundleActivator {
 
         if(logService != null) logService.log(LogService.LOG_INFO, bundleSymbolicName + " starting.");
 
-        String pid = bundleSymbolicName + ".config";
+        String pid = bundleSymbolicName;
         Dictionary<String, String> dictionary = new Hashtable<String, String>();
         dictionary.put(Constants.SERVICE_PID, pid);
         managedServiceRegistration = context.registerService(ManagedService.class.getName(), this, dictionary);
