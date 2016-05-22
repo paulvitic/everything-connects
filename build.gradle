@@ -1,4 +1,5 @@
 project.ext {
+    junitVersion = '4.11'
     osgiSpecVersion = '4.3.1'
 }
 
@@ -13,7 +14,7 @@ subprojects {
 
     dependencies {
         testCompile (
-
+                'junit:junit:' + project.junitVersion
         )
 
         compile (
