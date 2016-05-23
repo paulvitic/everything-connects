@@ -8,4 +8,7 @@ More resources:
  http://help.eclipse.org/help32/topic/org.eclipse.platform.doc.isv/reference/misc/index.html
  http://help.eclipse.org/help32/topic/org.eclipse.platform.doc.isv/reference/misc/runtime-options.html
 
-
+To start:
+```
+> java -jar org.eclipse.osgi_[version].jar -console -initialize
+```

@@ -8,7 +8,6 @@ See [Knopflerfish configuration admin commands](http://www.knopflerfish.org/rele
 for bundle configuration.
 
 To start:
-
 ```
 > java -jar framework.jar -xargs init.xargs
 ```
