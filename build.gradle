@@ -23,6 +23,16 @@ subprojects {
         )
     }
 
+    jar {
+        manifest {
+            attributes(
+                    'Bundle-SymbolicName': project.name
+            )
+        }
+    }
+
     group = 'net.ec'
     version = '0.0.1'
 }
+
+
